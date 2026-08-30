@@ -1,0 +1,50 @@
+{
+  "labOrders": {
+    "title": "طلبات معمل الأسنان",
+    "add": "طلب معمل جديد",
+    "patient": "المريض",
+    "lab": "المعمل",
+    "loading": "جاري التحميل…",
+    "selectPatient": "اختر المريض",
+    "selectLab": "اختر المعمل",
+    "workType": "نوع العمل المطلوب",
+    "tooth": "السن / المرجع",
+    "impressionType": "طبعة الأسنان",
+    "antagonistInfo": "بيانات الفك المقابل",
+    "shade": "درجة اللون (Shade)",
+    "sentDate": "تاريخ الإرسال",
+    "expectedDate": "تاريخ الاستلام المتوقع",
+    "status": "الحالة",
+    "notes": "ملاحظات وتعليمات",
+    "save": "إرسال الطلب",
+    "cancel": "إلغاء",
+    "noLabsHint": "أنشئ جهة اتصال للمعمل أولاً من قسم جهات الاتصال.",
+    "workTypes": {
+      "crown": "تاج (Crown)",
+      "bridge": "جسر (Bridge)",
+      "denture": "طقم أسنان (Denture)",
+      "implant": "زراعة (Implant)",
+      "veneer": "عدسة / فينير (Veneer)",
+      "orthodontic": "تقويم أسنان",
+      "repair": "إصلاح / ترميم",
+      "other": "أخرى"
+    },
+    "impressionTypes": {
+      "alginate": "ألجينات (Alginate)",
+      "pvs_silicone": "سيليكون PVS",
+      "digital_scan": "مسح رقمي ثلاثي الأبعاد",
+      "other": "أخرى"
+    },
+    "statuses": {
+      "sent": "تم الإرسال",
+      "in_progress": "قيد التنفيذ",
+      "ready": "جاهز",
+      "received": "تم الاستلام",
+      "cancelled": "ملغى"
+    }
+  },
+  "nav": {
+    "labOrdersForm": "طلب معمل جديد",
+    "labOrdersStatus": "طلبات المعمل"
+  }
+}

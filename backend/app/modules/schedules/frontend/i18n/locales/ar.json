@@ -1,0 +1,88 @@
+{
+  "schedules": {
+    "nav": {
+      "clinicHours": "ساعات عمل العيادة",
+      "professionalSchedules": "جداول دوام الأطباء"
+    },
+    "settingsCards": {
+      "clinicHoursTitle": "أوقات دوام العيادة",
+      "clinicHoursDescription": "تحديد أوقات عمل العيادة الأسبوعية والمواعيد الخاصة (العطلات الرسمية، الدوام المخفض).",
+      "professionalHoursTitle": "جداول دوام الأطباء",
+      "professionalHoursDescription": "تحديد جداول الدوام الفردية لكل طبيب وإدارة فترات الإجازات والغياب."
+    },
+    "clinicHours": {
+      "title": "أوقات دوام العيادة",
+      "subtitle": "تحديد ساعات فتح وإغلاق العيادة لكل يوم من أيام الأسبوع.",
+      "weeklyTemplate": "الجدول الأسبوعي الثابت",
+      "overrides": "التواريخ والمواعيد الخاصة / الإجازات",
+      "addOverride": "إضافة تاريخ خاص",
+      "editOverride": "تعديل التاريخ الخاص",
+      "save": "حفظ التغييرات",
+      "saved": "تم تحديث جدول الدوام",
+      "savedError": "فشل حفظ جدول الدوام"
+    },
+    "professionalHours": {
+      "title": "جداول دوام الأطباء",
+      "selectProfessional": "اختر الطبيب",
+      "weeklyTemplate": "الجدول الأسبوعي",
+      "overrides": "الإجازات وساعات العمل الخاصة",
+      "addOverride": "إضافة إجازة / غياب",
+      "editOverride": "تعديل الإجازة / الغياب",
+      "save": "حفظ التغييرات",
+      "saved": "تم تحديث جدول الدوام"
+    },
+    "weekday": {
+      "0": "الإثنين",
+      "1": "الثلاثاء",
+      "2": "الأربعاء",
+      "3": "الخميس",
+      "4": "الجمعة",
+      "5": "السبت",
+      "6": "الأحد",
+      "closed": "مغلق",
+      "addShift": "إضافة فترة عمل (دوام)",
+      "removeShift": "حذف فترة العمل",
+      "start": "البدء",
+      "end": "الانتهاء"
+    },
+    "overrides": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "kind": "النوع",
+      "reason": "السبب",
+      "reasonPlaceholder": "مثال: إجازة عيد، حضور مؤتمر طبي…",
+      "closed": "مغلق طوال اليوم",
+      "customHours": "ساعات عمل مخصصة",
+      "unavailable": "غير متاح",
+      "noOverrides": "لا توجد تواريخ خاصة أو إجازات مجدولة",
+      "delete": "حذف",
+      "confirmDelete": "هل ترغب في حذف هذه الفترة الخاصة؟",
+      "add": "إضافة",
+      "save": "حفظ",
+      "cancel": "إلغاء"
+    },
+    "analytics": {
+      "occupancyTitle": "نسبة إشغال غرف العيادة (Cabinets)",
+      "utilizationTitle": "معدل استغلال ساعات الأطباء",
+      "peakHoursTitle": "ساعات الذروة",
+      "bookedMinutes": "الدقائق المحجوزة",
+      "availableMinutes": "الدقائق المتاحة",
+      "rate": "نسبة الإشغال",
+      "noData": "لا توجد بيانات للفترة المحددة"
+    },
+    "availability": {
+      "clinicClosed": "العيادة مغلقة",
+      "professionalOff": "الطبيب غير متاح",
+      "outsideHours": "خارج ساعات العمل المحددة",
+      "confirmOutside": "هذا الموعد خارج ساعات العمل المعتمدة. هل ترغب في حجز الموعد على أي حال؟",
+      "confirm": "حجز على أي حال",
+      "cancel": "إلغاء"
+    },
+    "onboarding": {
+      "hoursLabel": "ساعات دوام العيادة",
+      "hoursDescription": "الجدول مفتوح حالياً 24/7. اضبط ساعات الدوام الحقيقية لعيادتك.",
+      "presetSplit": "الإثنين–الجمعة 9–14 و 16–20 (فترتان)",
+      "presetContinuous": "الإثنين–الجمعة 9–18 (دوام متواصل)"
+    }
+  }
+}

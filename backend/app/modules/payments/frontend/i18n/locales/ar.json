@@ -1,0 +1,323 @@
+{
+  "payments": {
+    "nav": {
+      "payments": "المدفوعات والتحصيلات",
+      "reports": "تقارير التحصيل"
+    },
+    "balance": {
+      "debt": "الرصيد المستحق (ديون)",
+      "credit": "رصيد دائن على الحساب",
+      "paid": "إجمالي المدفوع"
+    },
+    "list": {
+      "title": "المدفوعات",
+      "subtitle": "سجل كافة المدفوعات وتخصيصاتها واسترداداتها.",
+      "empty": "لا توجد مدفوعات مسجلة تطابق عوامل التصفية.",
+      "new": "تسجيل دفعة جديدة",
+      "searchPlaceholder": "ابحث باسم المريض أو المرجع…",
+      "filterDateFrom": "من",
+      "filterDateTo": "إلى",
+      "filterMethod": "طريقة الدفع",
+      "filterPatient": "المريض",
+      "filter": {
+        "method": "كافة الطرق",
+        "hasRefunds": "تحتوي على استرداد",
+        "hasUnallocated": "تحتوي على رصيد على الحساب",
+        "patient": "المريض",
+        "withDebt": "مرضى لديهم مستحقات",
+        "paymentStatus": "حالة الدفعة"
+      },
+      "sort": {
+        "paymentDate": "تاريخ الدفع",
+        "amount": "المبلغ"
+      },
+      "budgetStatus": {
+        "paid": "مسدد بالكامل",
+        "partial": "مسدد جزئياً",
+        "unpaid": "غير مسدد"
+      },
+      "row": {
+        "debtTooltip": "مستحقات غير مدفوعة للمريض",
+        "creditTooltip": "رصيد دائن للمريض على الحساب",
+        "allocationsLabel": "التخصيصات",
+        "refundedLabel": "مسترد",
+        "noPatient": "بدون مريض محدد"
+      },
+      "columnDate": "التاريخ",
+      "columnPatient": "المريض",
+      "columnAmount": "المبلغ",
+      "columnMethod": "الطريقة",
+      "columnAllocations": "التخصيص",
+      "columnNet": "الصافي",
+      "columnActions": "الإجراءات"
+    },
+    "detail": {
+      "title": "تفاصيل الدفعة",
+      "amount": "المبلغ",
+      "method": "طريقة الدفع",
+      "date": "التاريخ",
+      "recordedBy": "المسجل بواسطة",
+      "allocations": "التخصيصات على الميزانيات",
+      "refunds": "الاستردادات",
+      "refund": "استرداد دفعة",
+      "refundedTotal": "إجمالي المسترد",
+      "netAmount": "صافي المبلغ",
+      "reference": "المرجع",
+      "notes": "الملاحظات"
+    },
+    "new": {
+      "title": "تسجيل دفعة جديدة",
+      "patient": "المريض",
+      "patientPlaceholder": "اختر المريض…",
+      "unknownPatient": "مريض غير معروف",
+      "amount": "المبلغ",
+      "suggestedHint": "المبلغ المقترح بناءً على المستحقات: {amount}",
+      "useSuggested": "استخدام المبلغ المقترح",
+      "method": "طريقة الدفع",
+      "moreMethods": "طرق أخرى",
+      "date": "التاريخ",
+      "today": "اليوم",
+      "advanced": "خيارات متقدمة",
+      "reference": "المرجع / الشيك",
+      "referencePlaceholder": "رقم الإيصال أو الشيك…",
+      "notes": "ملاحظات",
+      "allocations": "تخصيص الدفعة",
+      "allocationsHint": "تخصيص المبلغ على عروض الأسعار والميزانيات المفتوحة للمريض أو إبقائه على الحساب.",
+      "addAllocation": "إضافة تخصيص",
+      "allocationToBudget": "ميزانية #{number}",
+      "allocationOnAccount": "على الحساب (سلفة)",
+      "sumLabel": "مجموع التخصيصات",
+      "sumMismatch": "مجموع التخصيصات لا يتطابق مع إجمالي الدفعة",
+      "submit": "حفظ الدفعة",
+      "submitWithAmount": "تسجيل {amount}",
+      "cancel": "إلغاء",
+      "errPatient": "يرجى اختيار مريض",
+      "errAmount": "يرجى إدخال مبلغ صالح",
+      "errSum": "مجموع التخصيصات يجب أن يساوي مبلغ الدفعة",
+      "errUnknown": "حدث خطأ أثناء حفظ الدفعة"
+    },
+    "methods": {
+      "cash": "نقداً",
+      "card": "بطاقة دفع / مدى",
+      "bank_transfer": "تحويل بنكي",
+      "direct_debit": "خصم مباشر",
+      "insurance": "تأمين طبي",
+      "other": "أخرى"
+    },
+    "refund": {
+      "title": "استرداد دفعة",
+      "amount": "مبلغ الاسترداد",
+      "method": "طريقة الاسترداد",
+      "reason": "سبب الاسترداد",
+      "note": "ملاحظات إضافية",
+      "submit": "تأكيد الاسترداد",
+      "reasonCodes": {
+        "overpayment": "دفعة زائدة عن المستحق",
+        "overpaid": "دفعة زائدة",
+        "treatment_cancelled": "إلغاء العلاج",
+        "patient_dissatisfaction": "عدم رضا المريض",
+        "administrative_error": "خطأ إداري / محاسبي",
+        "dispute": "نزاع مالي",
+        "duplicate": "دفعة مكررة",
+        "other": "سبب آخر"
+      }
+    },
+    "ledger": {
+      "title": "سجل الإيرادات المكتسبة",
+      "totalPaid": "إجمالي المدفوع",
+      "totalEarned": "إجمالي المكتسب (المنفذ)",
+      "patientCredit": "رصيد دائن للمريض",
+      "clinicReceivable": "مستحقات للعيادة",
+      "onAccount": "على الحساب",
+      "empty": "لا توجد سجلات مكتسبة لهذا المريض."
+    },
+    "budgetCard": {
+      "title": "الميزانيات وعروض الأسعار",
+      "budgetTotal": "إجمالي الميزانية",
+      "collected": "المحصل",
+      "pending": "المتبقي",
+      "collect": "تحصيل دفعة",
+      "empty": "لا توجد ميزانيات مسجلة.",
+      "collectedLabel": "تم تحصيل {amount}",
+      "pendingLabel": "متبقي {amount}",
+      "outOfTotal": "من أصل {total}",
+      "settled": "مسددة بالكامل",
+      "history": "سجل المدفوعات",
+      "payment": "دفعة",
+      "emptyDetailed": "لا توجد ميزانيات مفتوحة لهذا المريض."
+    },
+    "budgetCollect": {
+      "title": "تحصيل من ميزانية #{number}",
+      "amountLabel": "المبلغ المراد تحصيله",
+      "methodLabel": "طريقة الدفع",
+      "dateLabel": "تاريخ التحصيل",
+      "today": "اليوم",
+      "quickFull": "المبلغ المتبقي كاملاً ({amount})",
+      "optionalDetails": "تفاصيل اختيارية",
+      "referenceLabel": "المرجع",
+      "referencePlaceholder": "رقم العملية أو الإيصال…",
+      "notesLabel": "ملاحظات",
+      "submit": "تأكيد التحصيل",
+      "cancel": "إلغاء",
+      "success": "تم تسجيل التحصيل بنجاح",
+      "errorGeneric": "تعذر تسجيل التحصيل",
+      "noteAppliedToBudget": "تم تطبيق {amount} على الميزانية #{number}.",
+      "notePendingAfter": "المبلغ المتبقي بعد هذه الدفعة: {amount}.",
+      "noteFullySettled": "تم تسديد الميزانية بالكامل.",
+      "noteToBudget": "تخصيص للميزانية: {amount}.",
+      "noteExcessToOnAccount": "تم تحويل المبلغ الزائد ({amount}) كرصيد على الحساب.",
+      "noteBudgetSettled": "تمت تسوية الميزانية #{number}.",
+      "noteToOnAccount": "تم إيداع {amount} كرصيد على الحساب."
+    },
+    "pendingCharges": {
+      "title": "رسوم وعلاجات مستحقة",
+      "count": "{count} علاجات مستحقة",
+      "more": "+{count} إضافية",
+      "collect": "تحصيل الرسوم",
+      "unnamedSession": "جلسة علاجية"
+    },
+    "patientPanel": {
+      "title": "الوضع المالي للمريض",
+      "cobrar": "تسجيل دفعة",
+      "kpis": {
+        "debt": "المستحق (الديون)",
+        "credit": "رصيد دائن",
+        "paid": "إجمالي المدفوع",
+        "earned": "المكتسب (المنفذ)",
+        "onAccount": "على الحساب",
+        "totalPaid": "إجمالي المدفوع"
+      },
+      "sidebar": {
+        "title": "المالية",
+        "newPayment": "تسجيل دفعة",
+        "history": "السجل المالي",
+        "credit": "رصيد المريض الدائن",
+        "lastPayment": "آخر دفعة",
+        "noLastPayment": "لا توجد مدفوعات حتى الآن",
+        "totalEarned": "العلاجات المنفذة"
+      },
+      "banner": {
+        "hasDebt": "يوجد رصيد مستحق على المريض بقيمة {amount}.",
+        "hasCredit": "يوجد رصيد دائن للمريض بقيمة {amount} على الحساب.",
+        "debtTitle": "مستحق للعيادة {amount}",
+        "debtDescription": "إجمالي المدفوع أقل من تكلفة العلاجات المنفذة.",
+        "creditTitle": "لديه رصيد دائن {amount}",
+        "creditDescription": "المدفوع يتجاوز تكلفة العلاجات المنفذة."
+      },
+      "timeline": {
+        "title": "الجدول الزمني المالي",
+        "empty": "لا توجد حركات مالية مسجلة.",
+        "drPrefix": "د. {name}",
+        "emptyCta": "تسجيل أول دفعة",
+        "loadError": "تعذر تحميل السجل المالي للمريض.",
+        "retry": "إعادة المحاولة",
+        "rowMenu": {
+          "detail": "عرض التفاصيل",
+          "reallocate": "تخصيص لعرض سعر…",
+          "refund": "استرداد"
+        },
+        "treatmentStatus": {
+          "cancelled": "ملغى",
+          "completed": "مكتمل",
+          "in_progress": "قيد التنفيذ",
+          "performed": "منفذ",
+          "planned": "مخطط"
+        },
+        "types": {
+          "earned": "علاج منفذ",
+          "payment": "دفعة مستلمة",
+          "refund": "مبلغ مسترد"
+        }
+      },
+      "refundModal": {
+        "title": "استرداد دفعة",
+        "amount": "مبلغ الاسترداد",
+        "cancel": "إلغاء",
+        "errorGeneric": "تعذر تسجيل عملية الاسترداد",
+        "method": "طريقة الاسترداد",
+        "note": "تفاصيل اختيارية",
+        "reason": "السبب",
+        "submit": "تأكيد الاسترداد"
+      }
+    },
+    "reports": {
+      "title": "تقارير التحصيل والمالية",
+      "subtitle": "تحليل شامل لحركات الأموال والمقبوضات ومستحقات العيادة.",
+      "loadError": "تعذر تحميل التقرير المالي",
+      "cardDescription": "مؤشرات التحصيل والتدفقات النقدية خلال الفترة المحددة.",
+      "period": "الفترة الزمنية",
+      "refresh": "تحديث",
+      "collected": "المحصل",
+      "refunded": "المسترد",
+      "net": "الصافي",
+      "patientCredit": "أرصدة المرضى الدائنة",
+      "patientCreditHint": "إجمالي المبالغ المدفوعة مقدماً من المرضى وغير المستهلكة في علاجات بعد.",
+      "clinicReceivable": "مستحقات العيادة لدى المرضى",
+      "refundRatio": "نسبة الاستردادات",
+      "byMethod": "حسب طريقة الدفع",
+      "byProfessional": "حسب الطبيب المعالج",
+      "byProfessionalHint": "توزيع المبالغ المحصلة حسب الطبيب صاحب العلاج.",
+      "aging": "تقادم الديون والمستحقات",
+      "agingHint": "توزيع المستحقات غير المدفوعة حسب فترات التأخير.",
+      "refunds": "تقرير الاستردادات",
+      "refundsHint": "تفاصيل المبالغ المرجعة للمرضى وأسبابها.",
+      "bucket": "{range} يوماً",
+      "unknownProfessional": "طبيب غير محدد",
+      "countShort": "{count} دفعة",
+      "countPatients": "{count} مريض",
+      "granularity": {
+        "day": "يومي",
+        "week": "أسبوعي",
+        "month": "شهري"
+      },
+      "hero": {
+        "title": "ملخص الفترة",
+        "description": "إجمالي التحصيلات وصافي التدفق المالي.",
+        "netCollected": "صافي التحصيل",
+        "netCollectedHint": "إجمالي المقبوضات ناقصاً المستردات في هذه الفترة.",
+        "receivable": "المستحقات المعلقة",
+        "receivableHint": "علاجات منفذة لم تُحصّل بعد حسب فترة تقادمها.",
+        "transactionsCount": "{n} عملية في هذه الفترة",
+        "vsPrevious": "مقارنة بالفترة السابقة"
+      },
+      "trend": {
+        "title": "اتجاه التحصيلات",
+        "subtitle": "صافي التحصيل حسب الفترة. الخط المتقطع يمثل المستردات.",
+        "empty": "لا توجد بيانات كافية لرسم المنحنى."
+      },
+      "empty": {
+        "noDataTitle": "لا توجد بيانات في هذه الفترة",
+        "noDataDescription": "قم بتعديل الفترة الزمنية أو تسجيل دفعة للبدء في عرض التقرير.",
+        "noMethods": "لا توجد تحصيلات حسب طريقة الدفع في هذه الفترة.",
+        "noProfessionals": "لا توجد علاجات منفذة في هذه الفترة.",
+        "noReceivable": "لا يوجد مرضى عليهم مستحقات متأخرة.",
+        "noTrend": "نقاط البيانات غير كافية لرسم منحنى الاتجاه."
+      },
+      "drilldown": {
+        "title": "تفاصيل الحركات",
+        "close": "إغلاق التفاصيل",
+        "viewPatients": "عرض المرضى الذين عليهم مستحقات",
+        "viewPayments": "عرض مدفوعات الفترة"
+      }
+    },
+    "target": {
+      "label": "وجهة التخصيص",
+      "placeholder": "اختر ميزانية أو رصيد على الحساب…",
+      "onAccount": "رصيد على الحساب (سلفة)",
+      "onAccountHint": "يُحفظ كرصيد دائن للمريض يُخصم منه مستقبلاً.",
+      "budgetHint": "ميزانية #{number} · {status}",
+      "lockedBudget": "ميزانية مغلقة ومسددة"
+    },
+    "reallocate": {
+      "title": "إعادة تخصيص الدفعة",
+      "hint": "تعديل توزيع المبالغ بين الميزانيات أو الرصيد على الحساب.",
+      "submit": "حفظ التخصيص الجديد",
+      "success": "تمت إعادة تخصيص الدفعة بنجاح",
+      "error": "تعذر إعادة تخصيص الدفعة"
+    },
+    "followup": {
+      "collect": "تحصيل مستحق",
+      "collected": "تم التحصيل"
+    }
+  }
+}

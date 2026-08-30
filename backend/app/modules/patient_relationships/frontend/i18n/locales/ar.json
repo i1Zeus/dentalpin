@@ -1,0 +1,22 @@
+{
+  "patientRelationships": {
+    "title": "العائلة",
+    "emptyHint": "لا توجد صلات قرابة مسجلة.",
+    "relationships": {
+      "title": "صلات القرابة العائلية",
+      "searchPatient": "ابحث عن مريض لربطه…",
+      "addSuccess": "تمت إضافة صلة القرابة بنجاح",
+      "addError": "تعذر إضافة صلة القرابة",
+      "removeError": "تعذر إزالة صلة القرابة",
+      "types": {
+        "parent": "أب / أم",
+        "child": "ابن / ابنة",
+        "spouse": "زوج / زوجة",
+        "sibling": "أخ / أخت",
+        "guardian": "ولي أمر / وصي",
+        "ward": "مشمول بالوصاية",
+        "other": "صلة أخرى"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "inventory": {
+    "title": "المخزون",
+    "add": "إضافة عنصر",
+    "edit": "تعديل العنصر",
+    "item": "العنصر",
+    "category": "الفئة",
+    "unit": "الوحدة",
+    "stock": "المخزون المتوفر",
+    "minimum": "الحد الأدنى",
+    "notes": "ملاحظات",
+    "status": "الحالة",
+    "ok": "كافٍ",
+    "low": "منخفض",
+    "filterByCategory": "تصفية حسب الفئة",
+    "lowStockOnly": "المخزون المنخفض فقط",
+    "includeInactive": "عرض العناصر غير النشطة",
+    "increment": "زيادة المخزون",
+    "decrement": "إنقاص المخزون",
+    "delete": "حذف",
+    "deleteTitle": "حذف العنصر",
+    "deleteMessage": "هل أنت متأكد من حذف هذا العنصر من المخزون؟ لا يمكن التراجع عن هذا الإجراء.",
+    "cannotDeleteWithHistory": "يحتوي هذا العنصر على سجل حركات مخزنية. يمكنك تعطيله بدلاً من ذلك للحفاظ على سجل التدقيق.",
+    "deactivate": "تعطيل",
+    "reactivate": "إعادة تفعيل",
+    "deactivated": "تم تعطيل العنصر",
+    "reactivated": "تمت إعادة تفعيل العنصر",
+    "empty": "لا توجد حركات مخزنية حتى الآن",
+    "allCategories": "كافة الفئات",
+    "adjustBy": "تعديل بمقدار…",
+    "apply": "تطبيق",
+    "cost": "تكلفة الوحدة",
+    "valuation": "قيمة المخزون",
+    "movements": "الحركات",
+    "movementsTitle": "حركات المخزون",
+    "reasons": {
+      "initial": "رصيد افتتاحي",
+      "restock": "إعادة تزويد (توريد)",
+      "consumption": "استهلاك",
+      "adjustment": "تسوية جردية",
+      "correction": "تصحيح"
+    },
+    "categories": {
+      "consumables": "مستهلكات طبية",
+      "equipment": "معدات وأدوات",
+      "office": "أدوات مكتبية",
+      "other": "أخرى"
+    }
+  },
+  "nav": {
+    "inventory": "المخزون"
+  }
+}

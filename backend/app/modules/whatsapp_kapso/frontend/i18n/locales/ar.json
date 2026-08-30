@@ -1,0 +1,53 @@
+{
+  "whatsapp_kapso": {
+    "settings": {
+      "title": "واتساب (Kapso)",
+      "description": "ربط رقم واتساب الخاص بالعيادة عبر Kapso لإرسال واستقبال الرسائل."
+    },
+    "connection": "الاتصال",
+    "verified": "تم التحقق",
+    "notVerified": "لم يتم التحقق",
+    "apiKey": "مفتاح API الخاص بـ Kapso",
+    "phoneNumberId": "معرّف رقم الهاتف (Phone Number ID)",
+    "businessAccountId": "معرّف حساب الأعمال (Business Account ID)",
+    "businessAccountHelp": "مطلوب لمزامنة النماذج المعتمدة.",
+    "displayPhone": "الرقم المعروض",
+    "webhookSecret": "الرمز السري للـ Webhook",
+    "secretStored": "محفوظ. اتركه فارغاً إذا كنت لا ترغب في تغييره.",
+    "webhook": "رابط الـ Webhook",
+    "webhookHelp": "الصق هذا الرابط في إعدادات Webhook في Kapso لاستقبال حالات الرسائل والردود.",
+    "copy": "نسخ",
+    "copied": "تم نسخ الرابط",
+    "templates": "النماذج",
+    "sync": "مزامنة",
+    "noTemplates": "لا توجد نماذج معتمدة. قم بالمزامنة لجلبها من Kapso.",
+    "notificationType": "نوع الإشعار",
+    "template": "النموذج",
+    "map": "ربط",
+    "mapped": "تم ربط النموذج",
+    "mapError": "تعذر ربط النموذج",
+    "test": "اختبار الإرسال",
+    "sendTest": "إرسال تجربة",
+    "testOk": "تم إرسال رسالة الاختبار بنجاح",
+    "testFail": "فشل إرسال رسالة الاختبار",
+    "saved": "تم حفظ الإعدادات",
+    "saveError": "تعذر الحفظ",
+    "synced": "تمت مزامنة {n} نماذج",
+    "syncError": "تعذر إجراء المزامنة",
+    "types": {
+      "appointment_confirmation": "تأكيد الموعد",
+      "appointment_reminder": "تذكير بالموعد",
+      "appointment_cancelled": "إلغاء الموعد",
+      "budget_sent": "إرسال عرض السعر",
+      "budget_accepted": "قبول عرض السعر",
+      "budget_reminder": "تذكير بعرض السعر",
+      "invoice_sent": "إرسال الفاتورة",
+      "recall_reminder": "تذكير بالمتابعة الدورية",
+      "welcome": "الترحيب"
+    },
+    "onboarding": {
+      "label": "الإرسال عبر واتساب",
+      "description": "واتساب هو القناة المفضلة للعيادة ولكن لم يتم ربط Kapso بعد. قم بربطه لتتمكن من إرسال الرسائل التلقائية."
+    }
+  }
+}

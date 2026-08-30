@@ -1,0 +1,90 @@
+{
+  "migrationImport": {
+    "settingsCard": {
+      "title": "ترحيل واستيراد البيانات (dental-bridge)",
+      "description": "استيراد ملف DPMF تم إنشاؤه عبر أداة dental-bridge (المرضى، المواعيد، عروض الأسعار، المدفوعات، المستندات)."
+    },
+    "page": {
+      "title": "ترحيل البيانات",
+      "subtitle": "استيراد البيانات المستخرجة بواسطة dental-bridge إلى هذه العيادة."
+    },
+    "upload": {
+      "dropFile": "أسقط ملف .dpm هنا، أو انقر للاختيار من جهازك",
+      "passphrase": "كلمة المرور (للملفات المشفرة فقط)",
+      "passphraseHelp": "مطلوبة فقط لملفات .dpm.enc / .dpm.zst.enc",
+      "submit": "رفع والتحقق من صحة الملف",
+      "uploading": "جاري الرفع…",
+      "error": "فشل الرفع"
+    },
+    "validate": {
+      "running": "جاري التحقق من صحة الملف…",
+      "ok": "الملف صالح وسليم",
+      "failed": "فشل التحقق من صحة الملف"
+    },
+    "preview": {
+      "title": "المعاينة",
+      "entities": "السجلات والكيانات",
+      "samples": "عينات البيانات",
+      "warnings": "التحذيرات",
+      "files": "الملفات المرفقة",
+      "filesTotal": "الإجمالي",
+      "filesWithSha": "مع تجزئة sha256",
+      "filesWithoutSha": "بدون sha256",
+      "verifactuCheckbox": "استيراد بيانات VeriFactu القانونية",
+      "verifactuHelp": "الحفاظ على بصمات VeriFactu الضريبية للفواتير. متاح فقط عند تثبيت وحدة VeriFactu ووجود بياناتها في الملف.",
+      "confirm": "تأكيد وبدء الاستيراد",
+      "warning": "لا يمكن التراجع عن هذا الإجراء. يرجى مراجعة البيانات بعناية قبل التأكيد."
+    },
+    "filters": {
+      "title": "تصفية الكادر الطبي",
+      "description": "يتم استيراد الموظفين المصفين بحالة غير نشطة (تُحفظ كإشارات تاريخية وتُخفى من جدول المواعيد). يمكنك إعادة تفعيلهم لاحقاً من الإعدادات ← المستخدمون.",
+      "totalLabel": "الإجمالي",
+      "deactivatedLabel": "غير نشط في المصدر",
+      "orphansLabel": "أعمدة جدول بدون سجل مستخدم",
+      "stale24mLabel": "بدون نشاط خلال آخر 24 شهراً",
+      "minActivityLabel": "الحد الأدنى للنشاط (بالأشهر)",
+      "minActivityHelp": "تعطيل الأطباء الذين ليس لديهم أي نشاط سريري أحدث من هذه الأشهر. اضبط 0 لتعطيل الفلتر.",
+      "excludeOrphans": "استبعاد أعمدة الجدول غير المرتبطة بسجل متعاون حقيقي",
+      "excludeInactive": "استبعاد الأطباء والموظفين المصنفين كغير نشطين في المصدر",
+      "excludeNonClinical": "استيراد أطباء الأسنان وأخصائيي الصحة الفموية فقط (تخطي المساعدين والإداريين)"
+    },
+    "execute": {
+      "running": "جاري الاستيراد…",
+      "progress": "{processed} من أصل {total} كياناً",
+      "ok": "اكتمل الاستيراد بنجاح",
+      "failed": "فشل الاستيراد"
+    },
+    "proposals": {
+      "title": "مراجعة مطابقة دليل العلاجات",
+      "subtitle": "ربط كل علاج من نظام Gesdén بدليل علاجات DentalPin قبل الاستيراد.",
+      "build": "احتساب المقترحات",
+      "building": "جاري الاحتساب…",
+      "summary": "{total} مقترحاً: {link} مرتبط، {fuzzy} مطابقة تقريبية، {create} لإنشائه كجديد",
+      "bulkAccept": "قبول كافة المطابقات بنسبة ثقة ≥ 0.9",
+      "accepted": "تم قبول {n} مقترحاً.",
+      "columnSource": "علاج Gesdén الأصلي",
+      "columnProposed": "المقترح",
+      "columnAction": "الإجراء",
+      "columnStatus": "الحالة",
+      "actionLink": "ربط بالدليل",
+      "actionFuzzy": "مطابقة تقريبية",
+      "actionCreate": "إنشاء كجديد",
+      "operatorPending": "معلق",
+      "operatorAccepted": "مقبول",
+      "operatorRelinked": "أعيد ربطه",
+      "operatorCreated": "إنشاء جديد",
+      "operatorIgnored": "تجاهل",
+      "acceptRow": "قبول",
+      "ignoreRow": "تجاهل"
+    },
+    "status": {
+      "uploaded": "تم الرفع",
+      "validating": "جاري التحقق",
+      "validated": "تم التحقق",
+      "previewing": "معاينة",
+      "executing": "جاري الاستيراد",
+      "completed": "مكتمل",
+      "failed": "فشل"
+    }
+  }
+}

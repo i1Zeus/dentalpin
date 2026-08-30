@@ -1,0 +1,20 @@
+{
+  "journal": {
+    "title": "سجل النشاطات",
+    "subtitle": "سجل تتبعي غير قابل للتعديل يوثق الإجراءات والمسؤولين عنها وتوقيتها عبر الوحدات.",
+    "filterByType": "تصفية حسب نوع الحدث",
+    "filterByDateFrom": "من",
+    "filterByDateTo": "إلى",
+    "event": "الحدث",
+    "actor": "المستخدم",
+    "patient": "المريض",
+    "when": "التوقيت",
+    "source": "المصدر",
+    "empty": "لم يتم تسجيل أي نشاط حتى الآن.",
+    "total": "{total} سجلاً",
+    "detailTitle": "تفاصيل بيانات الحدث",
+    "unattributed": "—",
+    "allEvents": "كافة الأحداث",
+    "viewPayload": "عرض التفاصيل"
+  }
+}
