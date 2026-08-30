@@ -142,6 +142,7 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
+      { code: 'ar', name: 'العربية', dir: 'rtl', file: 'ar.json' },
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'es', name: 'Español', file: 'es.json' },
       { code: 'fr', name: 'Français', file: 'fr.json' },
@@ -152,7 +153,8 @@ export default defineNuxtConfig({
       { code: 'pl', name: 'Polski', file: 'pl.json' },
       { code: 'it', name: 'Italiano', file: 'it.json' }
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'ar',
+    fallbackLocale: 'en',
     lazy: true,
     langDir: 'locales',
     strategy: 'no_prefix',
@@ -161,7 +163,7 @@ export default defineNuxtConfig({
     // (placeholder, title, aria-label) are not patched during hydration,
     // so an English server render used to survive until the next
     // client-side navigation (#235, #202). First visit without the
-    // cookie falls back to Accept-Language, then to `en`.
+    // cookie falls back to Accept-Language, then to `ar`.
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'dentalpin_locale',

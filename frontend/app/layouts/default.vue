@@ -91,7 +91,7 @@ function isActive(to: string): boolean {
   <div class="min-h-screen flex bg-canvas">
     <!-- Desktop/tablet sidebar (hidden on mobile) -->
     <aside
-      class="hidden md:flex fixed inset-y-0 left-0 z-50 flex-col bg-surface-muted transition-[width] duration-150 ease-out"
+      class="hidden md:flex fixed inset-y-0 inset-s-0 z-50 flex-col bg-surface-muted transition-[width] duration-150 ease-out border-e border-subtle"
       :class="isSidebarCollapsed ? 'w-16' : 'w-60'"
     >
       <!-- Logo -->
@@ -190,7 +190,7 @@ function isActive(to: string): boolean {
     <!-- Mobile drawer nav -->
     <USlideover
       v-model:open="mobileNavOpen"
-      side="left"
+      :side="locale === 'ar' ? 'right' : 'left'"
       :title="t('nav.menu', 'Menú')"
       :ui="{ content: 'w-72 max-w-[80vw] bg-surface-muted' }"
     >
@@ -289,7 +289,7 @@ function isActive(to: string): boolean {
     <!-- Main column -->
     <div
       class="flex-1 flex flex-col min-w-0 transition-[margin] duration-150 ease-out"
-      :class="isSidebarCollapsed ? 'md:ml-16' : 'md:ml-60'"
+      :class="isSidebarCollapsed ? 'md:ms-16' : 'md:ms-60'"
     >
       <DemoBanner />
 
@@ -312,7 +312,7 @@ function isActive(to: string): boolean {
           variant="ghost"
           color="neutral"
           size="sm"
-          :icon="isSidebarCollapsed ? 'i-lucide-panel-left-open' : 'i-lucide-panel-left-close'"
+          :icon="isSidebarCollapsed ? (locale === 'ar' ? 'i-lucide-panel-right-open' : 'i-lucide-panel-left-open') : (locale === 'ar' ? 'i-lucide-panel-right-close' : 'i-lucide-panel-left-close')"
           :aria-label="t('nav.toggleSidebar', 'Alternar barra lateral')"
           @click="toggleSidebar"
         />
@@ -320,7 +320,7 @@ function isActive(to: string): boolean {
         <!-- Clinic name — client-only to avoid SSR/CSR hydration text mismatch
              ("Clínica" placeholder vs loaded clinic name). -->
         <ClientOnly>
-          <div class="ml-3 sm:ml-4 flex items-center gap-2 min-w-0">
+          <div class="ms-3 sm:ms-4 flex items-center gap-2 min-w-0">
             <UIcon
               name="i-lucide-building-2"
               class="w-4 h-4 text-subtle shrink-0"

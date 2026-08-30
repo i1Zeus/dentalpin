@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { fr, es, en, pt, de, hu, pl, it } from '@nuxt/ui/locale'
+import { ar, fr, es, en, pt, de, hu, pl, it } from '@nuxt/ui/locale'
 
 const { t, locale } = useI18n()
 
 // @nuxt/ui does not ship a Tamil locale yet; fall back to English for
 // built-in UI labels while vue-i18n still serves the app's ta messages.
-const nuxtUILocales: Record<string, typeof en> = { en, fr, es, pt, de, hu, pl, it, ta: en }
+const nuxtUILocales: Record<string, typeof en> = { en, fr, es, pt, de, hu, pl, it, ar, ta: en }
 const nuxtUILocale = computed(() => nuxtUILocales[locale.value] || en)
 
 useHead(() => ({
@@ -16,7 +16,8 @@ useHead(() => ({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: locale.value
+    lang: locale.value,
+    dir: locale.value === 'ar' ? 'rtl' : 'ltr'
   }
 }))
 

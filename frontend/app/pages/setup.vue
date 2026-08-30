@@ -34,7 +34,7 @@ const { currentLocale, availableLocales, changeLocale } = useLocale()
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 // Languages the backend accepts as clinic communication language
 // (mirrors the `language` pattern on SystemSetup).
-const COMM_LANGUAGES = ['es', 'en', 'fr', 'pt', 'ta']
+const COMM_LANGUAGES = ['es', 'en', 'fr', 'pt', 'ta', 'ar']
 
 const step = ref<1 | 2>(1)
 const isLoading = ref(false)
@@ -234,7 +234,7 @@ async function onSubmit() {
 </script>
 
 <template>
-  <div class="w-full max-w-[480px] p-4 sm:p-6">
+  <div class="w-full max-w-120 p-4 sm:p-6">
     <div class="flex items-start justify-between gap-3 mb-6">
       <div class="flex items-center gap-3">
         <img
@@ -280,16 +280,16 @@ async function onSubmit() {
           <span
             v-if="idx > 0"
             class="h-px flex-1 min-w-4"
-            :class="step > idx ? 'bg-(--ui-primary)' : 'bg-(--ui-border)'"
+            :class="step > idx ? 'bg-primary' : 'bg-border'"
             aria-hidden="true"
           />
           <span
             class="flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium shrink-0"
             :class="step > idx + 1
-              ? 'bg-(--ui-primary) text-(--ui-bg)'
+              ? 'bg-primary text-(--ui-bg)'
               : step === idx + 1
-                ? 'ring-2 ring-(--ui-primary) text-default'
-                : 'ring-1 ring-(--ui-border) text-subtle'"
+                ? 'ring-2 ring-primary text-default'
+                : 'ring-1 ring-default text-subtle'"
             :aria-current="step === idx + 1 ? 'step' : undefined"
           >
             <UIcon
