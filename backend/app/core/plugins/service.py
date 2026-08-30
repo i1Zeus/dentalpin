@@ -17,7 +17,11 @@ from typing import Any
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from .alembic_paths import resolve_module_branch_head
+from .alembic_paths import (
+    _module_versions_dir,
+    resolve_module_branch_head,
+    resolve_module_branch_heads_map,
+)
 from .base import BaseModule
 from .db_models import ModuleOperationLog, ModuleRecord
 from .manifest import Manifest, ManifestError
@@ -135,6 +139,7 @@ class ModuleService:
         discovered = self.discovered()
         existing = await self._load_existing_records()
         now = datetime.now(UTC)
+        branch_heads = resolve_module_branch_heads_map()
 
         for module in discovered:
             try:
@@ -152,7 +157,8 @@ class ModuleService:
             # downgrade because the processor only populates
             # ``base_revision`` during the install flow, which auto-
             # installed modules never go through.
-            branch_head = resolve_module_branch_head(module)
+            versions_dir = _module_versions_dir(module)
+            branch_head = branch_heads.get(versions_dir) if versions_dir else None
 
             # The branch-isolation invariant for ``removable=True`` is
             # enforced at manifest-validation time (see
