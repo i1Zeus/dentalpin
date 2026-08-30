@@ -5,7 +5,7 @@
 // to English until their translations land — never to `some.dotted.key`
 // on a clinician's screen (the drift #126 documents).
 export default defineI18nConfig(() => ({
-  fallbackLocale: 'en',
+  fallbackLocale: 'ar',
   missingWarn: false,
   fallbackWarn: false,
   pluralRules: {
