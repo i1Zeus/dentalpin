@@ -74,7 +74,27 @@ def _load_script_directory():
         return None
 
 
-def resolve_module_branch_head(module: BaseModule) -> str | None:
+def resolve_module_branch_heads_map(script=None) -> dict[Path, str]:
+    """Map each versions directory Path to its head revision ID."""
+    if script is None:
+        script = _load_script_directory()
+    if script is None:
+        return {}
+    res: dict[Path, str] = {}
+    for rev in script.walk_revisions():
+        rev_path_str = getattr(rev, "path", None)
+        if not rev_path_str:
+            continue
+        try:
+            rev_dir = Path(rev_path_str).resolve().parent
+        except (OSError, ValueError):
+            continue
+        if rev_dir not in res:
+            res[rev_dir] = rev.revision
+    return res
+
+
+def resolve_module_branch_head(module: BaseModule, script=None) -> str | None:
     """Return the tip revision of ``module``'s own Alembic branch, if any.
 
     Modules that ship a ``migrations/versions`` directory alongside their
@@ -91,21 +111,7 @@ def resolve_module_branch_head(module: BaseModule) -> str | None:
     if versions_dir is None:
         return None
 
-    script = _load_script_directory()
-    if script is None:
-        return None
-
-    for rev in script.walk_revisions():
-        rev_path_str = getattr(rev, "path", None)
-        if not rev_path_str:
-            continue
-        try:
-            rev_dir = Path(rev_path_str).resolve().parent
-        except (OSError, ValueError):
-            continue
-        if rev_dir == versions_dir:
-            return rev.revision
-    return None
+    return resolve_module_branch_heads_map(script).get(versions_dir)
 
 
 def module_branch_is_isolated(module: BaseModule) -> bool:
@@ -186,8 +192,10 @@ def boot_upgrade_targets(
         if rev_path and Path(rev_path).resolve().parent == main_linear:
             targets.append(head)
 
+    heads_by_dir = resolve_module_branch_heads_map(script)
     for module in modules:
-        head = resolve_module_branch_head(module)
+        versions_dir = _module_versions_dir(module)
+        head = heads_by_dir.get(versions_dir) if versions_dir else None
         if head is None:
             continue
         if wanted(module):
