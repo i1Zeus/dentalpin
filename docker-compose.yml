@@ -26,6 +26,7 @@ services:
       ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-}
       STORAGE_BACKEND: ${STORAGE_BACKEND:-local}
       STORAGE_LOCAL_PATH: ${STORAGE_LOCAL_PATH:-/app/storage}
+      DEMO_MODE: "${DEMO_MODE:-false}"
       # Copilot agentic layer (app/core/llm/). Set OPENAI_API_KEY in .env
       # (gitignored). Empty default keeps the stack bootable without it.
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
@@ -69,6 +70,7 @@ services:
       # Set NUXT_DEVTOOLS=false for a stable local e2e run — devtools
       # full-page reloads abort Playwright navigation (#260).
       NUXT_DEVTOOLS: ${NUXT_DEVTOOLS:-true}
+      NUXT_PUBLIC_DEMO_MODE: "${DEMO_MODE:-false}"
     ports:
       - "3000:3000"
     depends_on:

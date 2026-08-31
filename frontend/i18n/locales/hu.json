@@ -10,7 +10,9 @@
     "credentialsNote": "Csak kipróbálásra — azért látható, mert ez egy nyilvános demópéldány.",
     "copyEmail": "E-mail másolása",
     "copyPassword": "Jelszó másolása",
-    "copied": "Vágólapra másolva"
+    "copied": "Vágólapra másolva",
+    "quickLogin": "Quick login",
+    "quickLoginNote": "Click on any role to log in instantly."
   },
   "nav": {
     "dashboard": "Kezdőlap",

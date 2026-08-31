@@ -10,7 +10,9 @@
     "credentialsNote": "Solo para evaluación — visibles porque esta es una instancia de demo pública.",
     "copyEmail": "Copiar correo",
     "copyPassword": "Copiar contraseña",
-    "copied": "Copiado al portapapeles"
+    "copied": "Copiado al portapapeles",
+    "quickLogin": "Acceso rápido",
+    "quickLoginNote": "Haz clic en cualquier rol para iniciar sesión al instante."
   },
   "nav": {
     "dashboard": "Inicio",

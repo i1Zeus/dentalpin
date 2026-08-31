@@ -10,7 +10,9 @@
     "credentialsNote": "Nur zur Evaluierung — wird angezeigt, weil dies eine öffentliche Demo-Instanz ist.",
     "copyEmail": "E-Mail kopieren",
     "copyPassword": "Passwort kopieren",
-    "copied": "In die Zwischenablage kopiert"
+    "copied": "In die Zwischenablage kopiert",
+    "quickLogin": "Schnell-Login",
+    "quickLoginNote": "Klicken Sie auf eine Rolle, um sich sofort anzumelden."
   },
   "nav": {
     "dashboard": "Start",

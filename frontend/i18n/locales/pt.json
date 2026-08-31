@@ -10,7 +10,9 @@
     "credentialsNote": "Apenas para avaliação — mostradas por se tratar de uma instância de demonstração pública.",
     "copyEmail": "Copiar email",
     "copyPassword": "Copiar palavra-passe",
-    "copied": "Copiado para a área de transferência"
+    "copied": "Copiado para a área de transferência",
+    "quickLogin": "Login rápido",
+    "quickLoginNote": "Clique em qualquer função para entrar instantaneamente."
   },
   "nav": {
     "dashboard": "Início",

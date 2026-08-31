@@ -1,10 +1,53 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const { t } = useI18n()
 const { public: { demoMode } } = useRuntimeConfig()
 const toast = useToast()
+const auth = useAuth()
 
 const DEMO_EMAIL = 'admin@demo.clinic'
 const DEMO_PASSWORD = 'demo1234'
+
+const loadingEmail = ref<string | null>(null)
+
+const roles = [
+  {
+    email: 'admin@demo.clinic',
+    labelKey: 'settings.roles.admin',
+    icon: 'i-lucide-crown',
+    color: 'primary' as const,
+    class: 'col-span-2'
+  },
+  {
+    email: 'dentist@demo.clinic',
+    labelKey: 'settings.roles.dentist',
+    icon: 'i-lucide-stethoscope',
+    color: 'neutral' as const,
+    class: ''
+  },
+  {
+    email: 'receptionist@demo.clinic',
+    labelKey: 'settings.roles.receptionist',
+    icon: 'i-lucide-contact',
+    color: 'neutral' as const,
+    class: ''
+  },
+  {
+    email: 'hygienist@demo.clinic',
+    labelKey: 'settings.roles.hygienist',
+    icon: 'i-lucide-sparkles',
+    color: 'neutral' as const,
+    class: ''
+  },
+  {
+    email: 'assistant@demo.clinic',
+    labelKey: 'settings.roles.assistant',
+    icon: 'i-lucide-user-check',
+    color: 'neutral' as const,
+    class: ''
+  }
+]
 
 async function copy(value: string) {
   if (!import.meta.client) return
@@ -19,12 +62,37 @@ async function copy(value: string) {
     // Clipboard may be unavailable (insecure context). Silent.
   }
 }
+
+async function quickLogin(email: string) {
+  if (loadingEmail.value) return
+  loadingEmail.value = email
+  try {
+    await auth.login({
+      email,
+      password: 'demo1234'
+    })
+    toast.add({
+      title: t('auth.loginSuccess'),
+      color: 'success'
+    })
+    await navigateTo('/')
+  } catch (error: unknown) {
+    console.error('Quick login error:', error)
+    toast.add({
+      title: t('common.error'),
+      description: t('auth.invalidCredentials'),
+      color: 'danger'
+    })
+  } finally {
+    loadingEmail.value = null
+  }
+}
 </script>
 
 <template>
   <div
     v-if="demoMode"
-    class="alert-surface-info rounded-token-md px-4 py-3 mt-4 space-y-2"
+    class="alert-surface-info rounded-token-md px-4 py-3 mt-4 space-y-3"
   >
     <div class="flex items-center gap-2">
       <UIcon
@@ -67,5 +135,40 @@ async function copy(value: string) {
     <p class="text-caption text-subtle">
       {{ t('demo.credentialsNote') }}
     </p>
+
+    <!-- Divider -->
+    <div class="border-t border-info/20 my-2"></div>
+
+    <!-- Quick Login Section -->
+    <div class="space-y-2">
+      <div class="flex items-center gap-2">
+        <UIcon
+          name="i-lucide-zap"
+          class="w-4 h-4 shrink-0 text-amber-500"
+        />
+        <span class="text-ui font-medium">
+          {{ t('demo.quickLogin') }}
+        </span>
+      </div>
+      <p class="text-caption text-subtle">
+        {{ t('demo.quickLoginNote') }}
+      </p>
+      <div class="grid grid-cols-2 gap-2 pt-1">
+        <UButton
+          v-for="role in roles"
+          :key="role.email"
+          variant="soft"
+          :color="role.color"
+          :icon="role.icon"
+          :class="role.class"
+          :loading="loadingEmail === role.email"
+          :disabled="!!loadingEmail"
+          size="sm"
+          @click="quickLogin(role.email)"
+        >
+          {{ t(role.labelKey) }}
+        </UButton>
+      </div>
+    </div>
   </div>
 </template>

@@ -10,7 +10,9 @@
     "credentialsNote": "For evaluation only — shown because this is a public demo instance.",
     "copyEmail": "Copy email",
     "copyPassword": "Copy password",
-    "copied": "Copied to clipboard"
+    "copied": "Copied to clipboard",
+    "quickLogin": "Quick login",
+    "quickLoginNote": "Click on any role to log in instantly."
   },
   "nav": {
     "dashboard": "Home",

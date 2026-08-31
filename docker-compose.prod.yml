@@ -37,10 +37,11 @@ services:
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
       BUDGET_PUBLIC_SECRET_KEY: ${BUDGET_PUBLIC_SECRET_KEY:-}
       ENVIRONMENT: production
-      ALLOWED_ORIGINS: ${PUBLIC_URL:-http://localhost}
+      ALLOWED_ORIGINS: "${PUBLIC_URL:-http://localhost},http://localhost,http://127.0.0.1"
       STORAGE_BACKEND: local
       STORAGE_LOCAL_PATH: /app/storage
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      DEMO_MODE: "${DEMO_MODE:-false}"
       # Seeds the demo clinic on first boot. Leave at 0 for a real clinic.
       SEED_ON_STARTUP: ${SEED_ON_STARTUP:-0}
       SEED_LANG: ${SEED_LANG:-es}
@@ -65,9 +66,10 @@ services:
     environment:
       # Nuxt overrides runtimeConfig.public.apiBaseUrl from this at boot,
       # so one image serves every deployment — nothing is baked in.
-      NUXT_PUBLIC_API_BASE_URL: ${PUBLIC_URL:-http://localhost}
+      NUXT_PUBLIC_API_BASE_URL: ""
       API_BASE_URL_SERVER: http://backend:8000
       NUXT_PUBLIC_DOCS_URL: ${DOCS_URL:-https://docs.dentalpin.com}
+      NUXT_PUBLIC_DEMO_MODE: "${DEMO_MODE:-false}"
     depends_on:
       backend:
         condition: service_started

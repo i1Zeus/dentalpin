@@ -10,7 +10,9 @@
     "credentialsNote": "Solo per la valutazione — visibile perché questa è un'istanza demo pubblica.",
     "copyEmail": "Copia e-mail",
     "copyPassword": "Copia password",
-    "copied": "Copiato negli appunti"
+    "copied": "Copiato negli appunti",
+    "quickLogin": "Accesso rapido",
+    "quickLoginNote": "Clicca su qualsiasi ruolo per accedere all'istante."
   },
   "nav": {
     "dashboard": "Home",

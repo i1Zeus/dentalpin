@@ -10,7 +10,9 @@
     "credentialsNote": "மதிப்பீட்டிற்கு மட்டும் — இது ஒரு பொது டெமோ நிகழ்வாக இருப்பதால் காட்டப்படுகிறது.",
     "copyEmail": "மின்னஞ்சலை நகலெடு",
     "copyPassword": "கடவுச்சொல்லை நகலெடு",
-    "copied": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது"
+    "copied": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+    "quickLogin": "Quick login",
+    "quickLoginNote": "Click on any role to log in instantly."
   },
   "nav": {
     "dashboard": "முகப்பு",

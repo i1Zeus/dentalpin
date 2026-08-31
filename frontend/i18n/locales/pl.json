@@ -10,7 +10,9 @@
     "credentialsNote": "Wyłącznie do celów testowych — widoczne, ponieważ to publiczna instancja demo.",
     "copyEmail": "Kopiuj e-mail",
     "copyPassword": "Kopiuj hasło",
-    "copied": "Skopiowano do schowka"
+    "copied": "Skopiowano do schowka",
+    "quickLogin": "Quick login",
+    "quickLoginNote": "Click on any role to log in instantly."
   },
   "nav": {
     "dashboard": "Start",

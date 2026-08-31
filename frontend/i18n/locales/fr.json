@@ -10,7 +10,9 @@
     "credentialsNote": "Uniquement pour évaluation — affiché car il s'agit d'une instance de démo publique.",
     "copyEmail": "Copier l'email",
     "copyPassword": "Copier le mot de passe",
-    "copied": "Copié dans le presse-papiers"
+    "copied": "Copié dans le presse-papiers",
+    "quickLogin": "Connexion rapide",
+    "quickLoginNote": "Cliquez sur n'importe quel rôle pour vous connecter instantanément."
   },
   "nav": {
     "dashboard": "Accueil",
