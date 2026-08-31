@@ -29,6 +29,9 @@ services:
 
   backend:
     image: ghcr.io/martinezsalmeron/dentalpin-backend:${DENTALPIN_VERSION:-latest}
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     environment:
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-dental}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-dental_clinic}
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
@@ -56,6 +59,9 @@ services:
 
   frontend:
     image: ghcr.io/martinezsalmeron/dentalpin-frontend:${DENTALPIN_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile.prod
     environment:
       # Nuxt overrides runtimeConfig.public.apiBaseUrl from this at boot,
       # so one image serves every deployment — nothing is baked in.

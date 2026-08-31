@@ -23,14 +23,16 @@ export function useAuth() {
   // Cookie lifetime matches refresh token; JWT expiry is enforced by the
   // backend, and a 401 triggers refresh in useApi. Matching the access
   // cookie's maxAge to the 15min JWT TTL caused premature logouts.
+  const isSecure = import.meta.client ? window.location.protocol === 'https:' : false
+
   const accessToken = useCookie('access_token', {
     maxAge: 60 * 60 * 24 * 7, // 7 days
-    secure: import.meta.env.PROD,
+    secure: isSecure,
     sameSite: 'lax'
   })
   const refreshToken = useCookie('refresh_token', {
     maxAge: 60 * 60 * 24 * 7, // 7 days
-    secure: import.meta.env.PROD,
+    secure: isSecure,
     sameSite: 'lax'
   })
 
