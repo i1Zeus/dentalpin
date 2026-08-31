@@ -19,7 +19,7 @@ import { errorMessage } from '~~/app/utils/error'
 
 export function useCatalog() {
   const api = useApi()
-  const { t, locale } = useI18n()
+  const { t, te, locale } = useI18n()
   const toast = useToast()
 
   // State
@@ -427,6 +427,10 @@ export function useCatalog() {
   }
 
   function getItemName(item: TreatmentCatalogItem, overrideLocale?: string): string {
+    const codeKey = `odontogram.treatments.items.${item.internal_code}`
+    if (te(codeKey)) {
+      return t(codeKey)
+    }
     const loc = overrideLocale || locale.value
     return item.names[loc] || item.names.es || item.names.en || item.internal_code
   }

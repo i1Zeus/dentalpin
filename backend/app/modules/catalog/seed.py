@@ -270,6 +270,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-VISIT",
             "names": {
+                "ar": "زيارة أولى",
                 "es": "Primera Visita",
                 "en": "First Visit",
                 "fr": "Première visite",
@@ -291,7 +292,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         },
         {
             "internal_code": "DX-REVIEW",
-            "names": {"es": "Revisión", "en": "Follow-up", "fr": "Contrôle", "ta": "தொடர் பரிசோதனை"},
+            "names": {"ar": "مراجعة / متابعة", "es": "Revisión", "en": "Follow-up", "fr": "Contrôle", "ta": "தொடர் பரிசோதனை"},
             "treatment_scope": "global_mouth",
             "default_price": Decimal("20.00"),
             "default_duration_minutes": 20,
@@ -301,6 +302,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-RXPA",
             "names": {
+                "ar": "أشعة ذروية",
                 "es": "Radiografía Periapical",
                 "en": "Periapical X-Ray",
                 "fr": "Radiographie périapicale",
@@ -315,6 +317,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-RXPAN",
             "names": {
+                "ar": "أشعة بانورامية",
                 "es": "Radiografía Panorámica",
                 "en": "Panoramic X-Ray",
                 "fr": "Radiographie panoramique",
@@ -329,6 +332,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-CBCT",
             "names": {
+                "ar": "أشعة مقطعية ثلاثية الأبعاد (CBCT)",
                 "es": "CBCT (TAC 3D)",
                 "en": "CBCT (3D Scan)",
                 "fr": "CBCT (Tomodensitométrie 3D)",
@@ -343,6 +347,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-STUDY",
             "names": {
+                "ar": "دراسة تقويمية",
                 "es": "Estudio Ortodóncico",
                 "en": "Orthodontic Study",
                 "fr": "Étude orthodontique",
@@ -357,6 +362,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-PHOTO",
             "names": {
+                "ar": "صور داخل الفم",
                 "es": "Fotografías intraorales",
                 "en": "Intraoral Photos",
                 "fr": "Photographies intraorales",
@@ -371,6 +377,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-URGENT",
             "names": {
+                "ar": "زيارة طارئة",
                 "es": "Visita de urgencia",
                 "en": "Emergency visit",
                 "fr": "Visite d'urgence",
@@ -385,6 +392,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-2ND-OPINION",
             "names": {
+                "ar": "رأي طبي ثانٍ",
                 "es": "Segunda opinión",
                 "en": "Second opinion",
                 "fr": "Deuxième avis",
@@ -399,6 +407,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "DX-TELE",
             "names": {
+                "ar": "أشعة السيفالومترية الجانبية",
                 "es": "Telerradiografía lateral",
                 "en": "Lateral cephalogram",
                 "fr": "Téléradiographie latérale",
@@ -416,6 +425,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-CLEAN",
             "names": {
+                "ar": "تنظيف الأسنان",
                 "es": "Limpieza dental",
                 "en": "Dental Cleaning",
                 "fr": "Détartrage",
@@ -436,6 +446,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-FLUOR",
             "names": {
+                "ar": "تطبيق الفلورايد",
                 "es": "Fluorización",
                 "en": "Fluoride Application",
                 "fr": "Fluoration",
@@ -450,6 +461,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-CHECKUP",
             "names": {
+                "ar": "فحص دوري",
                 "es": "Revisión",
                 "en": "Checkup",
                 "fr": "Contrôle",
@@ -470,6 +482,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-SEAL",
             "names": {
+                "ar": "سد الشقوق والحفر (سدادات الأسنان)",
                 "es": "Sellador de fosas y fisuras",
                 "en": "Pit and Fissure Sealant",
                 "fr": "Scellement de sillons et fissures",
@@ -488,6 +501,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-HYGIENE-EDU",
             "names": {
+                "ar": "تعليمات نظافة وصحة الفم",
                 "es": "Instrucciones de higiene",
                 "en": "Oral Hygiene Instruction",
                 "fr": "Instructions d'hygiène buccale",
@@ -502,6 +516,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-CLEAN-CURETTAGE",
             "names": {
+                "ar": "إزالة الجير وتقليح الجذور",
                 "es": "Tartrectomía con curetaje",
                 "en": "Scaling with curettage",
                 "fr": "Détartrage avec curetage",
@@ -516,6 +531,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PREV-CLEAN-PED",
             "names": {
+                "ar": "تنظيف أسنان الأطفال الوقائي",
                 "es": "Profilaxis infantil",
                 "en": "Pediatric prophylaxis",
                 "fr": "Prophylaxie pédiatrique",
@@ -536,6 +552,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-COMP",
             "names": {
+                "ar": "حشوة كومبوزيت (تجميلية)",
                 "es": "Obturación composite",
                 "en": "Composite filling",
                 "fr": "Obturation composite",
@@ -561,6 +578,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-AMAL",
             "names": {
+                "ar": "حشوة أملغم (بلاتين)",
                 "es": "Obturación amalgama",
                 "en": "Amalgam filling",
                 "fr": "Obturation amalgame",
@@ -586,6 +604,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-TEMP",
             "names": {
+                "ar": "حشوة مؤقتة",
                 "es": "Obturación temporal",
                 "en": "Temporary filling",
                 "fr": "Obturation temporaire",
@@ -605,6 +624,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-INLAY-COMP",
             "names": {
+                "ar": "حشوة كومبوزيت مصبوبة داخلياً (Inlay)",
                 "es": "Inlay composite",
                 "en": "Composite inlay",
                 "fr": "Inlay composite",
@@ -622,6 +642,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-INLAY-CER",
             "names": {
+                "ar": "حشوة سيراميك مصبوبة داخلياً (Inlay)",
                 "es": "Inlay cerámico",
                 "en": "Ceramic inlay",
                 "fr": "Inlay céramique",
@@ -639,6 +660,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-OVER-COMP",
             "names": {
+                "ar": "حشوة كومبوزيت تغطية فوقية (Overlay)",
                 "es": "Overlay composite",
                 "en": "Composite overlay",
                 "fr": "Overlay composite",
@@ -656,6 +678,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-OVER-CER",
             "names": {
+                "ar": "حشوة سيراميك تغطية فوقية (Overlay)",
                 "es": "Overlay cerámico",
                 "en": "Ceramic overlay",
                 "fr": "Overlay céramique",
@@ -674,6 +697,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-VEN-COMP",
             "names": {
+                "ar": "عدسة كومبوزيت (فينير)",
                 "es": "Carilla composite",
                 "en": "Composite veneer",
                 "fr": "Facette composite",
@@ -691,6 +715,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-VEN-PORC",
             "names": {
+                "ar": "عدسة بورسلين (فينير)",
                 "es": "Carilla porcelana",
                 "en": "Porcelain veneer",
                 "fr": "Facette céramique",
@@ -708,6 +733,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-VEN-ZIR",
             "names": {
+                "ar": "عدسة زيركون (فينير)",
                 "es": "Carilla zirconio",
                 "en": "Zirconia veneer",
                 "fr": "Facette zircone",
@@ -726,6 +752,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-MC",
             "names": {
+                "ar": "تاج بورسلين صب معدني",
                 "es": "Corona metal-cerámica",
                 "en": "Metal-ceramic crown",
                 "fr": "Couronne métal-céramique",
@@ -763,6 +790,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-ZIR",
             "names": {
+                "ar": "تاج زيركون",
                 "es": "Corona zirconio",
                 "en": "Zirconia crown",
                 "fr": "Couronne zircone",
@@ -800,6 +828,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-DISI",
             "names": {
+                "ar": "تاج إيماكس (ثنائي سيليكات الليثيوم)",
                 "es": "Corona disilicato de litio",
                 "en": "Lithium disilicate crown",
                 "fr": "Couronne disilicate de lithium",
@@ -837,6 +866,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-METAL",
             "names": {
+                "ar": "تاج معدني كامل",
                 "es": "Corona metal",
                 "en": "Metal crown",
                 "fr": "Couronne métallique",
@@ -854,6 +884,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-PROV",
             "names": {
+                "ar": "تاج مؤقت",
                 "es": "Corona provisional",
                 "en": "Provisional crown",
                 "fr": "Couronne provisoire",
@@ -874,6 +905,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-IMPL-MC",
             "names": {
+                "ar": "تاج معدني سيراميك على زرعة",
                 "es": "Corona sobre implante metal-cerámica",
                 "en": "Metal-ceramic crown on implant",
                 "fr": "Couronne sur implant métal-céramique",
@@ -911,6 +943,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-IMPL-ZIR",
             "names": {
+                "ar": "تاج زيركون على زرعة",
                 "es": "Corona sobre implante zirconio",
                 "en": "Zirconia crown on implant",
                 "fr": "Couronne sur implant zircone",
@@ -948,6 +981,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-IMPL-PROV",
             "names": {
+                "ar": "تاج مؤقت على زرعة",
                 "es": "Corona provisional sobre implante",
                 "en": "Provisional crown on implant",
                 "fr": "Couronne provisoire sur implant",
@@ -966,6 +1000,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-BRIDGE-MC",
             "names": {
+                "ar": "جسر معدني سيراميك",
                 "es": "Puente metal-cerámica",
                 "en": "Metal-ceramic bridge",
                 "fr": "Pont métal-céramique",
@@ -984,6 +1019,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-BRIDGE-ZIR",
             "names": {
+                "ar": "جسر زيركون",
                 "es": "Puente zirconio",
                 "en": "Zirconia bridge",
                 "fr": "Pont zircone",
@@ -1002,6 +1038,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-BRIDGE-MARY",
             "names": {
+                "ar": "جسر ميريلاند",
                 "es": "Puente Maryland",
                 "en": "Maryland bridge",
                 "fr": "Pont du Maryland",
@@ -1021,6 +1058,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-SPLINT-OCC",
             "names": {
+                "ar": "حارس ليلي / جبيرة إطباقية",
                 "es": "Férula de descarga",
                 "en": "Occlusal splint",
                 "fr": "Gouttière d'occlusion",
@@ -1038,6 +1076,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-SPLINT-PERIO",
             "names": {
+                "ar": "جبيرة تثبيت الأسنان (Periodontal)",
                 "es": "Férula periodontal de contención",
                 "en": "Periodontal retention splint",
                 "fr": "Gouttière de contention parodontale",
@@ -1055,6 +1094,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-RECONSTR",
             "names": {
+                "ar": "إعادة بناء السن بالكومبوزيت",
                 "es": "Reconstrucción amplia con composite",
                 "en": "Large composite reconstruction",
                 "fr": "Reconstruction extensive en composite",
@@ -1072,6 +1112,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-FILL-REPAIR",
             "names": {
+                "ar": "إصلاح حشوة",
                 "es": "Reparación de obturación",
                 "en": "Filling repair",
                 "fr": "Réparation d'obturation",
@@ -1089,6 +1130,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-RECEMENT",
             "names": {
+                "ar": "إعادة إلصاق التاج",
                 "es": "Recementado de corona",
                 "en": "Crown recementation",
                 "fr": "Recimentation de couronne",
@@ -1106,6 +1148,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-CROWN-POST-ENDO",
             "names": {
+                "ar": "تاج على سن معالج سحب عصب",
                 "es": "Corona sobre diente endodonciado",
                 "en": "Crown over endodontically treated tooth",
                 "fr": "Couronne sur dent dévitalisée",
@@ -1123,6 +1166,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-HEAL-ABUT",
             "names": {
+                "ar": "دعامة الشفاء (على الزرعة)",
                 "es": "Pilar de cicatrización",
                 "en": "Healing abutment",
                 "fr": "Pilier de cicatrisation",
@@ -1140,6 +1184,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "REST-DEF-ABUT",
             "names": {
+                "ar": "الدعامة النهائية (على الزرعة)",
                 "es": "Pilar definitivo",
                 "en": "Definitive abutment",
                 "fr": "Pilier définitif",
@@ -1160,6 +1205,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-UNI",
             "names": {
+                "ar": "علاج عصب سن أحادي الجذر",
                 "es": "Endodoncia unirradicular",
                 "en": "Single-root endodontics",
                 "fr": "Endodontie uniradiculaire",
@@ -1177,6 +1223,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-BI",
             "names": {
+                "ar": "علاج عصب سن ثنائي الجذور",
                 "es": "Endodoncia birradicular",
                 "en": "Two-root endodontics",
                 "fr": "Endodontie biradiculaire",
@@ -1194,6 +1241,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-MULTI",
             "names": {
+                "ar": "علاج عصب ضرس متعدد الجذور",
                 "es": "Endodoncia molar",
                 "en": "Molar endodontics",
                 "fr": "Endodontie molaire",
@@ -1240,6 +1288,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-RETREAT",
             "names": {
+                "ar": "إعادة علاج عصب",
                 "es": "Re-tratamiento endodóncico",
                 "en": "Endodontic retreatment",
                 "fr": "Retraitement endodontique",
@@ -1257,6 +1306,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-POST-FIBER",
             "names": {
+                "ar": "وتد ألياف ضوئية (Fiber post)",
                 "es": "Perno de fibra",
                 "en": "Fiber post",
                 "fr": "Pivot en fibre",
@@ -1274,6 +1324,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-POST-METAL",
             "names": {
+                "ar": "وتد معدني مصبوب (Cast post)",
                 "es": "Perno colado",
                 "en": "Cast post",
                 "fr": "Pivot coulé",
@@ -1291,6 +1342,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-URGENT",
             "names": {
+                "ar": "فتح حجرة اللب بشكل طارئ",
                 "es": "Apertura cameral urgente",
                 "en": "Emergency pulp chamber opening",
                 "fr": "Ouverture d'urgence de la chambre pulpaire",
@@ -1308,6 +1360,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-MED-REFRESH",
             "names": {
+                "ar": "تبديل دواء داخل القنوات",
                 "es": "Recambio de medicación intraconducto",
                 "en": "Intracanal medication refresh",
                 "fr": "Renouvellement de médicament intraradiculaire",
@@ -1325,6 +1378,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-APICOFORM",
             "names": {
+                "ar": "علاج ذروة السن غير المكتمل (Apexification)",
                 "es": "Apicoformación",
                 "en": "Apexification",
                 "fr": "Apexification",
@@ -1342,6 +1396,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ENDO-PED",
             "names": {
+                "ar": "علاج عصب أسنان أطفال مؤقتة",
                 "es": "Endodoncia en pieza temporal",
                 "en": "Endodontics on primary tooth",
                 "fr": "Endodontie sur dent temporaire",
@@ -1362,6 +1417,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-SCAL",
             "names": {
+                "ar": "تقليح وتنظيف اللثة البسيط",
                 "es": "Tartrectomía simple",
                 "en": "Simple scaling",
                 "fr": "Détartrage simple",
@@ -1376,6 +1432,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-RAR",
             "names": {
+                "ar": "تقليح وتسوية الجذور (لكل ربع)",
                 "es": "Raspado y alisado radicular (por cuadrante)",
                 "en": "Root scaling and planing (per quadrant)",
                 "fr": "Détartrage et surfaçage radiculaire (par quadrant)",
@@ -1390,6 +1447,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-SURG",
             "names": {
+                "ar": "جراحة اللثة",
                 "es": "Cirugía periodontal",
                 "en": "Periodontal surgery",
                 "fr": "Chirurgie parodontale",
@@ -1404,6 +1462,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-GRAFT",
             "names": {
+                "ar": "طعم لثوي",
                 "es": "Injerto gingival",
                 "en": "Gingival graft",
                 "fr": "Greffe gingivale",
@@ -1418,6 +1477,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-BONE",
             "names": {
+                "ar": "إعادة بناء العظم الموجهة",
                 "es": "Regeneración ósea guiada",
                 "en": "Guided bone regeneration",
                 "fr": "Régénération osseuse guidée",
@@ -1432,6 +1492,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-MAINT",
             "names": {
+                "ar": "صيانة ومتابعة اللثة",
                 "es": "Mantenimiento periodontal",
                 "en": "Periodontal maintenance",
                 "fr": "Entretien parodontal",
@@ -1446,6 +1507,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-CURET-SEXT",
             "names": {
+                "ar": "كحت وتجريف اللثة (لكل سدس)",
                 "es": "Curetaje por sextante",
                 "en": "Curettage per sextant",
                 "fr": "Curetage par sextant",
@@ -1460,6 +1522,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-STUDY",
             "names": {
+                "ar": "دراسة اللثة ومخطط الجيوب",
                 "es": "Estudio periodontal (sondaje)",
                 "en": "Periodontal probing study",
                 "fr": "Étude parodontale (sondage)",
@@ -1474,6 +1537,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-SPLINT-RAR",
             "names": {
+                "ar": "جبيرة تثبيت الأسنان بعد تقليح الجذور",
                 "es": "Férula de contención post-RAR",
                 "en": "Post-SRP retention splint",
                 "fr": "Gouttière de contention post-DDR",
@@ -1491,6 +1555,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-GINGIV",
             "names": {
+                "ar": "استئصال اللثة",
                 "es": "Gingivectomía",
                 "en": "Gingivectomy",
                 "fr": "Gingivectomie",
@@ -1505,6 +1570,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-SURG-RESECT",
             "names": {
+                "ar": "جراحة اللثة الاستئصالية",
                 "es": "Cirugía periodontal resectiva",
                 "en": "Resective periodontal surgery",
                 "fr": "Chirurgie parodontale résécative",
@@ -1519,6 +1585,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PERIO-SURG-REGEN",
             "names": {
+                "ar": "جراحة اللثة التجديدية",
                 "es": "Cirugía periodontal regenerativa",
                 "en": "Regenerative periodontal surgery",
                 "fr": "Chirurgie parodontale régénérative",
@@ -1536,6 +1603,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-EXT-SIMPLE",
             "names": {
+                "ar": "قلع بسيط",
                 "es": "Extracción simple",
                 "en": "Simple extraction",
                 "fr": "Extraction simple",
@@ -1553,6 +1621,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-EXT-COMPLEX",
             "names": {
+                "ar": "قلع معقد",
                 "es": "Extracción compleja",
                 "en": "Complex extraction",
                 "fr": "Extraction compliquée",
@@ -1570,6 +1639,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-EXT-3MOLAR",
             "names": {
+                "ar": "قلع ضرس العقل",
                 "es": "Extracción tercer molar",
                 "en": "Wisdom tooth extraction",
                 "fr": "Extraction de la dent de sagesse",
@@ -1587,6 +1657,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-EXT-OST",
             "names": {
+                "ar": "قلع جراحي مع إزالة عظم",
                 "es": "Extracción quirúrgica con ostectomía",
                 "en": "Surgical extraction with osteotomy",
                 "fr": "Extraction chirurgicale avec ostéotomie",
@@ -1604,6 +1675,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-IMP-TI",
             "names": {
+                "ar": "زرعة أسنان تيتانيوم",
                 "es": "Implante de titanio",
                 "en": "Titanium implant",
                 "fr": "Implant en titane",
@@ -1650,6 +1722,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-IMP-ZIR",
             "names": {
+                "ar": "زرعة أسنان زيركون",
                 "es": "Implante de zirconio",
                 "en": "Zirconia implant",
                 "fr": "Implant en zircone",
@@ -1667,6 +1740,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-SINUS",
             "names": {
+                "ar": "رفع الجيب الأنفي",
                 "es": "Elevación de seno",
                 "en": "Sinus lift",
                 "fr": "Élévation sinusienne",
@@ -1681,6 +1755,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-BONE-GRAFT",
             "names": {
+                "ar": "طعم عظمي",
                 "es": "Injerto óseo",
                 "en": "Bone graft",
                 "fr": "Greffe osseuse",
@@ -1695,6 +1770,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-APEC",
             "names": {
+                "ar": "استئصال ذروة السن جراحياً",
                 "es": "Apicectomía",
                 "en": "Apicoectomy",
                 "fr": "Apicectomie",
@@ -1712,6 +1788,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-FREN",
             "names": {
+                "ar": "قطع لجام الفم واللسان",
                 "es": "Frenectomía",
                 "en": "Frenectomy",
                 "fr": "Frénectomie",
@@ -1725,7 +1802,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         },
         {
             "internal_code": "SURG-BIOPSY",
-            "names": {"es": "Biopsia", "en": "Biopsy", "fr": "Biopsie", "ta": "திசுப் பரிசோதனை"},
+            "names": {"ar": "خزعة", "es": "Biopsia", "en": "Biopsy", "fr": "Biopsie", "ta": "திசுப் பரிசோதனை"},
             "treatment_scope": "tooth",
             "default_price": Decimal("220.00"),
             "default_duration_minutes": 45,
@@ -1735,6 +1812,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-CONN-GRAFT",
             "names": {
+                "ar": "طعم من الأنسجة الضامة",
                 "es": "Injerto de tejido conectivo",
                 "en": "Connective tissue graft",
                 "fr": "Greffe de tissu conjonctif",
@@ -1749,6 +1827,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-CROWN-LENGTH",
             "names": {
+                "ar": "إطالة تاج السن",
                 "es": "Alargamiento coronario",
                 "en": "Crown lengthening",
                 "fr": "Allongement coronaire",
@@ -1763,6 +1842,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-CYST",
             "names": {
+                "ar": "استئصال كيس فموي جراحياً",
                 "es": "Exéresis de quiste",
                 "en": "Cyst removal",
                 "fr": "Exérèse de kyste",
@@ -1780,6 +1860,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-EXT-INCLUIDO",
             "names": {
+                "ar": "قلع سن مطمور",
                 "es": "Extracción de pieza incluida",
                 "en": "Impacted tooth extraction",
                 "fr": "Extraction de dent incluse",
@@ -1797,6 +1878,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-BONE-REGUL",
             "names": {
+                "ar": "تسوية الحافة العظمية",
                 "es": "Regularización ósea",
                 "en": "Bone reshaping",
                 "fr": "Régularisation osseuse",
@@ -1811,6 +1893,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-PRP",
             "names": {
+                "ar": "بلازما غنية بالصفائح الدموية (PRP)",
                 "es": "Plasma rico en plaquetas",
                 "en": "Platelet-rich plasma",
                 "fr": "Plasma riche en plaquettes",
@@ -1825,6 +1908,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-PERIIMP",
             "names": {
+                "ar": "علاج التهاب ما حول الزرعة",
                 "es": "Tratamiento de periimplantitis",
                 "en": "Peri-implantitis treatment",
                 "fr": "Traitement de péri-implantite",
@@ -1839,6 +1923,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-BONE-VERT",
             "names": {
+                "ar": "زيادة العظم الرأسية",
                 "es": "Aumento óseo vertical",
                 "en": "Vertical bone augmentation",
                 "fr": "Augmentation osseuse verticale",
@@ -1853,6 +1938,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-BONE-HORIZ",
             "names": {
+                "ar": "زيادة العظم الأفقية",
                 "es": "Aumento óseo horizontal",
                 "en": "Horizontal bone augmentation",
                 "fr": "Augmentation osseuse horizontale",
@@ -1867,6 +1953,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "SURG-SINUS-CLOSED",
             "names": {
+                "ar": "رفع الجيب الأنفي المغلق (غير الرضي)",
                 "es": "Elevación de seno cerrada (atraumática)",
                 "en": "Closed sinus lift (atraumatic)",
                 "fr": "Élévation sinusienne fermée (atraumatique)",
@@ -1884,6 +1971,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-METAL",
             "names": {
+                "ar": "تقويم أسنان بمقاويم معدنية",
                 "es": "Ortodoncia brackets metálicos",
                 "en": "Metal braces",
                 "fr": "Bagues métalliques",
@@ -1898,6 +1986,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-CERAM",
             "names": {
+                "ar": "تقويم أسنان بمقاويم تجميلية (خزفية)",
                 "es": "Ortodoncia brackets estéticos",
                 "en": "Ceramic braces",
                 "fr": "Bagues esthétiques",
@@ -1912,6 +2001,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-LINGUAL",
             "names": {
+                "ar": "تقويم أسنان لساني (داخلي)",
                 "es": "Ortodoncia lingual",
                 "en": "Lingual braces",
                 "fr": "Bagues linguales",
@@ -1926,6 +2016,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-INV-LITE",
             "names": {
+                "ar": "تقويم إنفيزلاين الخفيف (Invisalign Lite)",
                 "es": "Invisalign Lite",
                 "en": "Invisalign Lite",
                 "fr": "Invisalign Lite",
@@ -1940,6 +2031,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-INV-FULL",
             "names": {
+                "ar": "تقويم إنفيزلاين الكامل (Invisalign Full)",
                 "es": "Invisalign Full",
                 "en": "Invisalign Full",
                 "fr": "Invisalign Full",
@@ -1954,6 +2046,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-BRACK",
             "names": {
+                "ar": "تركيب مقوم منفرد بديل",
                 "es": "Bracket individual (reposición)",
                 "en": "Bracket (replacement)",
                 "fr": "Bracket individuel (remplacement)",
@@ -1971,6 +2064,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-REVIEW",
             "names": {
+                "ar": "متابعة وتعديل التقويم",
                 "es": "Revisión de ortodoncia",
                 "en": "Orthodontic review",
                 "fr": "Contrôle d'orthodontie",
@@ -1985,6 +2079,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-RET-FIX",
             "names": {
+                "ar": "مثبت تقويم ثابت",
                 "es": "Retenedor fijo",
                 "en": "Fixed retainer",
                 "fr": "Contention fixe",
@@ -2002,6 +2097,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-RET-REM",
             "names": {
+                "ar": "مثبت تقويم متحرك",
                 "es": "Retenedor removible",
                 "en": "Removable retainer",
                 "fr": "Contention amovible",
@@ -2016,6 +2112,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-ATTACH",
             "names": {
+                "ar": "ملحقات إنفيزلاين التثبيتية",
                 "es": "Ataches de Invisalign",
                 "en": "Invisalign attachments",
                 "fr": "Attachements Invisalign",
@@ -2033,6 +2130,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-BRACK-CEMENT",
             "names": {
+                "ar": "إلصاق حاصرات التقويم",
                 "es": "Cementado de bracket",
                 "en": "Bracket bonding",
                 "fr": "Collage de bracket",
@@ -2050,6 +2148,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-BRACK-DEBOND",
             "names": {
+                "ar": "فك وإزالة حاصرات التقويم",
                 "es": "Descementado de brackets",
                 "en": "Bracket removal",
                 "fr": "Dépose des bagues",
@@ -2064,6 +2163,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-SEPARATOR",
             "names": {
+                "ar": "فواصل تقويم الأسنان",
                 "es": "Separadores ortodóncicos",
                 "en": "Orthodontic separators",
                 "fr": "Séparateurs orthodontiques",
@@ -2078,6 +2178,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-PALATAL-EXP",
             "names": {
+                "ar": "موسع قبة الحنك",
                 "es": "Expansor palatino",
                 "en": "Palatal expander",
                 "fr": "Dilatateur palatin",
@@ -2092,6 +2193,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "ORTO-TAD",
             "names": {
+                "ar": "زرعة تقويمية صغيرة مؤقتة (TAD)",
                 "es": "Microtornillo / anclaje esquelético temporal (TAD)",
                 "en": "Temporary anchorage device (TAD)",
                 "fr": "Dispositif d'ancrage temporaire (TAD)",
@@ -2109,6 +2211,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-BLAN-AMB",
             "names": {
+                "ar": "تبييض أسنان منزلي",
                 "es": "Blanqueamiento ambulatorio",
                 "en": "At-home whitening",
                 "fr": "Blanchiment à domicile",
@@ -2123,6 +2226,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-BLAN-CLIN",
             "names": {
+                "ar": "تبييض أسنان عيادي",
                 "es": "Blanqueamiento en clínica",
                 "en": "In-office whitening",
                 "fr": "Blanchiment en cabinet",
@@ -2137,6 +2241,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-BLAN-COMBO",
             "names": {
+                "ar": "تبييض أسنان مشترك (عيادي ومنزلي)",
                 "es": "Blanqueamiento combinado",
                 "en": "Combined whitening",
                 "fr": "Blanchiment combiné",
@@ -2151,6 +2256,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-MICROAB",
             "names": {
+                "ar": "سحج دقيق لمينا السن",
                 "es": "Microabrasión",
                 "en": "Microabrasion",
                 "fr": "Microabrasion",
@@ -2165,6 +2271,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-REMIN",
             "names": {
+                "ar": "إعادة التمعدن التجميلي للمينا",
                 "es": "Remineralización estética",
                 "en": "Aesthetic remineralization",
                 "fr": "Reminéralisation esthétique",
@@ -2179,6 +2286,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-COMP-AESTH",
             "names": {
+                "ar": "ترميم تجميلي بالكومبوزيت",
                 "es": "Reconstrucción estética con composite",
                 "en": "Aesthetic composite reconstruction",
                 "fr": "Reconstruction esthétique en composite",
@@ -2193,6 +2301,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "EST-PIG-REMOVE",
             "names": {
+                "ar": "إزالة تصبغات الأسنان",
                 "es": "Eliminación de pigmentación",
                 "en": "Pigmentation removal",
                 "fr": "Élimination des pigmentations",
@@ -2210,6 +2319,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-FULL-SUP",
             "names": {
+                "ar": "طقم أسنان كامل للفك العلوي",
                 "es": "Prótesis completa superior",
                 "en": "Full upper denture",
                 "fr": "Prothèse complète supérieure",
@@ -2224,6 +2334,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-FULL-INF",
             "names": {
+                "ar": "طقم أسنان كامل للفك السفلي",
                 "es": "Prótesis completa inferior",
                 "en": "Full lower denture",
                 "fr": "Prothèse complète inférieure",
@@ -2238,6 +2349,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-PART-METAL",
             "names": {
+                "ar": "طقم أسنان جزئي معدني كروية",
                 "es": "Prótesis parcial esquelética",
                 "en": "Partial metal denture",
                 "fr": "Prothèse partielle squelettique",
@@ -2252,6 +2364,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-PART-ACR",
             "names": {
+                "ar": "طقم أسنان جزئي أكريلي",
                 "es": "Prótesis parcial acrílica",
                 "en": "Partial acrylic denture",
                 "fr": "Prothèse partielle acrylique",
@@ -2266,6 +2379,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-OVERDENT",
             "names": {
+                "ar": "طقم فوقي مدعوم بالزراعة",
                 "es": "Sobredentadura sobre implantes",
                 "en": "Implant-supported overdenture",
                 "fr": "Surprothèse sur implants",
@@ -2280,6 +2394,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-REBASE",
             "names": {
+                "ar": "تبطين طقم الأسنان",
                 "es": "Rebasado de prótesis",
                 "en": "Denture reline",
                 "fr": "Rebasage de prothèse",
@@ -2294,6 +2409,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-REPAIR",
             "names": {
+                "ar": "إصلاح طقم الأسنان",
                 "es": "Reparación de prótesis",
                 "en": "Denture repair",
                 "fr": "Réparation de prothèse",
@@ -2308,6 +2424,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-PROV-REMOV",
             "names": {
+                "ar": "طقم أسنان مؤقت متحرك",
                 "es": "Prótesis provisional removible",
                 "en": "Provisional removable denture",
                 "fr": "Prothèse provisoire amovible",
@@ -2322,6 +2439,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PROT-OCC-ADJ",
             "names": {
+                "ar": "تعديل وتوازن الإطباق",
                 "es": "Ajuste oclusal",
                 "en": "Occlusal adjustment",
                 "fr": "Ajustement occlusal",
@@ -2339,6 +2457,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-FLUOR",
             "names": {
+                "ar": "تطبيق الفلورايد للأطفال",
                 "es": "Fluorización pediátrica",
                 "en": "Pediatric fluoride",
                 "fr": "Fluoration pédiatrique",
@@ -2353,6 +2472,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-SEAL",
             "names": {
+                "ar": "سد الشقوق والحفر للأطفال",
                 "es": "Sellador pediátrico",
                 "en": "Pediatric sealant",
                 "fr": "Scellement de sillons pédiatrique",
@@ -2371,6 +2491,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-PULPOTOMY",
             "names": {
+                "ar": "بتر لب السن للأطفال",
                 "es": "Pulpotomía",
                 "en": "Pulpotomy",
                 "fr": "Pulpotomie",
@@ -2388,6 +2509,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-CROWN-SS",
             "names": {
+                "ar": "تاج معدني مسبق الصنع للأطفال",
                 "es": "Corona preformada pediátrica",
                 "en": "Stainless steel crown",
                 "fr": "Couronne préformée pédiatrique",
@@ -2405,6 +2527,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-SPACE",
             "names": {
+                "ar": "حافظ مسافة بسيط",
                 "es": "Mantenedor de espacio simple",
                 "en": "Simple space maintainer",
                 "fr": "Mainteneur d'espace simple",
@@ -2419,6 +2542,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-SPACE-COMPOUND",
             "names": {
+                "ar": "حافظ مسافة مركب",
                 "es": "Mantenedor de espacio compuesto",
                 "en": "Compound space maintainer",
                 "fr": "Mainteneur d'espace composé",
@@ -2433,6 +2557,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-EXT-TEMP",
             "names": {
+                "ar": "قلع سن مؤقت للأطفال",
                 "es": "Extracción de pieza temporal",
                 "en": "Primary tooth extraction",
                 "fr": "Extraction de dent temporaire",
@@ -2450,6 +2575,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-FILL-TEMP",
             "names": {
+                "ar": "حشوة سن مؤقت للأطفال",
                 "es": "Obturación en dentición temporal",
                 "en": "Primary tooth filling",
                 "fr": "Obturation sur dent temporaire",
@@ -2475,6 +2601,7 @@ TREATMENTS: dict[str, list[dict[str, Any]]] = {
         {
             "internal_code": "PED-PULPECTOMY",
             "names": {
+                "ar": "استئصال لب السن للأطفال",
                 "es": "Pulpectomía pediátrica",
                 "en": "Pediatric pulpectomy",
                 "fr": "Pulpectomie pédiatrique",
