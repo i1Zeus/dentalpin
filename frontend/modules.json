@@ -1,10 +1,12 @@
 {
   "layers": [
+    "/module_layers/accounting_export/frontend",
     "/module_layers/agenda/frontend",
     "/module_layers/billing/frontend",
     "/module_layers/budget/frontend",
     "/module_layers/catalog/frontend",
     "/module_layers/clinical_notes/frontend",
+    "/module_layers/contacts/frontend",
     "/module_layers/copilot/frontend",
     "/module_layers/media/frontend",
     "/module_layers/notifications/frontend",
@@ -16,9 +18,14 @@
     "/module_layers/recalls/frontend",
     "/module_layers/reports/frontend",
     "/module_layers/schedules/frontend",
-    "/module_layers/treatment_plan/frontend"
+    "/module_layers/treatment_plan/frontend",
+    "/module_layers/whatsapp_kapso/frontend"
   ],
   "modules": [
+    {
+      "name": "accounting_export",
+      "path": "/module_layers/accounting_export/frontend"
+    },
     {
       "name": "agenda",
       "path": "/module_layers/agenda/frontend"
@@ -38,6 +45,10 @@
     {
       "name": "clinical_notes",
       "path": "/module_layers/clinical_notes/frontend"
+    },
+    {
+      "name": "contacts",
+      "path": "/module_layers/contacts/frontend"
     },
     {
       "name": "copilot",
@@ -86,6 +97,10 @@
     {
       "name": "treatment_plan",
       "path": "/module_layers/treatment_plan/frontend"
+    },
+    {
+      "name": "whatsapp_kapso",
+      "path": "/module_layers/whatsapp_kapso/frontend"
     }
   ],
   "version": 1
